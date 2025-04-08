@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de Pokémon (Todas as Gerações)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Buscador de Pokémon</h1>
+    <form id="pokemonForm">
+      <div class="input-wrapper">
+        <input 
+          type="text" 
+          id="pokemonName" 
+          placeholder="Digite o nome do Pokémon"
+          autocomplete="off"
+          required
+        />
+        <div id="suggestions" class="suggestions"></div>
+      </div>
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

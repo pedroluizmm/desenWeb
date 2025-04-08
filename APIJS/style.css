@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative; /* para posicionar sugestões */
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Input + sugestões */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Botão */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #218838;
+}
+
+/* Área de resultado */
+#result {
+  margin-top: 20px;
+}
+#result img {
+  max-width: 100px;
+  margin: 10px 0;
+}
+
+/* Sugestões (dropdown) */
+.suggestions {
+  position: absolute;
+  top: 42px; /* logo abaixo do input */
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 999;
+  display: none; /* escondido inicialmente */
+}
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.suggestion-item:hover {
+  background: #f0f0f0;
+}
